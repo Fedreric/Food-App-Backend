@@ -16,6 +16,6 @@ router
 router
   .route("/recetas/:id")
   .delete(borrarReceta)
-  .put(validarReceta, editarReceta)
+  .put(editarReceta)
   .get(obtenerReceta);
 export default router;
