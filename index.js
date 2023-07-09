@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import * as dotenv from 'dotenv';
 import './src/database/dbConection'
 import recetasRouter from './src/routes/recetas.routes'
+import usuarioRouter from './src/routes/usuarios.routes'
 
 dotenv.config(); // puedo leer variables de entorno, se declara antes del app.set
 //crear una instancia de express
@@ -25,3 +26,4 @@ app.use(morgan('dev')); // nos da informacion extra en la terminal
 //rutas
 
 app.use("/apirecetas", recetasRouter)
+app.use('/apirecetas/usuario',usuarioRouter)
