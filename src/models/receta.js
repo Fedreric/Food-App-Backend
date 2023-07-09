@@ -31,7 +31,6 @@ const recetaSchema = new Schema({
         type: String,
         minLength: 5,
         maxLength:3000,
-        matchMedia:/^[A-ZÁ-Ü][a-z0-9:,.()á-üÁ-Ü\s]{4,2999}$/,
         required: true
     }
 })
